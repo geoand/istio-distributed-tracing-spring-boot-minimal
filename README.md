@@ -1,6 +1,6 @@
 ## Purpose 
 
-Showcase Istio's Distributed Tracing capabilities with a set of properly instrumented Spring Boot applications
+Showcase Istio's Distributed Tracing via a (minimally) instrumented set of Spring Boot applications
 
 ## Prerequisites
 
@@ -66,5 +66,4 @@ echo http://$(oc get route istio-ingress -o jsonpath='{.spec.host}{"\n"}' -n ist
 
 The traces from the invocation of the two endpoints should look like the following:
 
-* Serial
 ![](greeting-service/src/main/resources/static/traces.jpg)
